@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
 }
 /*header styles*/
@@ -117,6 +116,31 @@ main{
     max-width: 1440px;
     margin: 0 auto;
 }
+section{
+    margin-top: 100px;
+}
+.tour-container{
+    display: flex;
+    justify-content: space-between;
+}
+.tour-about{
+    max-width: 700px;
+}
+.tour-img-container img{
+    max-width: 550px;
+}
+.primary-title{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.primary-description{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
 
 
 @media screen and (max-width:600px) {
@@ -124,6 +148,8 @@ main{
         gap: 5px;
         display: none;
     }
+    .tour-about,
+    .tour-container,
     .banner-all,
     nav > ul,
     .header-container{
@@ -154,20 +180,36 @@ main{
         margin-left: 10px;
         margin-right: 10px;
         padding: 10px;
-        /*max-width: 365px;*/
-        width: 95%;
-        height: 90%;
-        /*max-height: 500px;*/
+        max-width: 410px;
+        /*width: 95%;
+        height: 90%;*/
+        max-height: 550px;
         background-position: center;
     }
+    .primary-title,
     .banner-title{
         font-size: 1.5rem;
     }
+    .primary-description,
     .banner-description{
         font-size: 1rem;
     }
     .banner-content{
         flex-direction: column;
         gap: 20px;
+    }
+    section{
+        margin-top: 10px;
+    }
+    .tour-container{
+        flex-direction: column;
+    }
+    .tour-about{
+        max-width: 410px;
+    }
+    .tour-img-container img{
+        max-width: 345px;
+        margin-top: 10px;
+        margin-right: 10px;
     }
 }

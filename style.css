@@ -208,6 +208,40 @@ section{
     font-weight: 400;
     margin-top: 20px;
 }
+/*newsletter styles*/
+.newsletter-container{
+    display: flex;
+    justify-content: space-between;
+}
+.newsletter{
+    width: 380px;
+    padding: 20px 40px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+#unique{
+    margin-bottom: 25px;
+}
+.newsletter input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 16px 160px 16px 20px;
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    outline: none;
+}
+#another-one{
+    padding: 16px 153px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 800;
+    background: #FF5400;
+}
 
 
 
@@ -280,6 +314,7 @@ section{
     section{
         margin-top: 10px;
     }
+    .newsletter-container,
     .row-1,
     .tour-container{
         flex-direction: column;
@@ -311,5 +346,25 @@ section{
     }
     #card-3{
         width: 280px;
+    }
+    .newsletter{
+        width: 325px;
+        padding: 5px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    .newsletter input{
+        padding: 16px 65px;
+        margin-bottom: 10px;
+    }
+    #another-one{
+        padding: 16px 128px;
+    }
+    .newsletter-image img{
+        width: 345px;
+        height: 300px;
+        margin-left: 15px;
+        margin-right: 10px;
     }
 }

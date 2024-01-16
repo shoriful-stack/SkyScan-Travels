@@ -134,7 +134,6 @@ section{
     justify-content: space-between;
 }
 .tour-about{
-    /*max-width: 700px;*/
     max-width: 550px;
 }
 .tour-img-container img{
@@ -164,6 +163,34 @@ section{
 #different{
     margin-bottom: 0px;
 }
+/*vacation section styles*/
+.cart img{
+    width: 250px;
+}
+.vacation-card-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 50px;
+    margin-left: -10px;
+}
+.cart{
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+}
+#abroad img{
+    height: 165px;
+}
+.cart-description{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #424247;
+}
+
 /*Why choose us styles*/
 .card-container{
     display: grid;
@@ -324,23 +351,6 @@ footer{
     .company-name{
         font-size: 1.75rem;
     }
-    /*ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }*/
     .banner-container{
         margin-top: 10px;
         margin-left: 10px;
@@ -348,10 +358,6 @@ footer{
         padding: 10px;
         max-width: 410px;
         max-height: 600px;
-        /*width: 95%;
-        height: 90%;*/
-        /*max-width: 335px;
-        max-height: 483px;*/
         background-position: center;
     }
     .primary-title,
@@ -370,6 +376,7 @@ footer{
     section{
         margin-top: 10px;
     }
+    .vacation-card-container,
     .newsletter-container,
     .row-1,
     .tour-container{
@@ -432,5 +439,15 @@ footer{
     }
     footer{
         margin-top: 0px;
+    }
+    #vacation-heading{
+        padding: 0 15px 0 15px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .vacation-card-container{
+        padding: 0 15px 0 15px;
+        margin-top: 20px;
+        margin-left: 0px;
     }
 }

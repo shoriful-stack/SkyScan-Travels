@@ -6,7 +6,8 @@
 }
 /*header styles*/
 header{
-    max-width: 1440px;
+    /*max-width: 1440px;*/
+    max-width: 1170px;
     margin: 0 auto;
     background: #fff;
 }
@@ -63,21 +64,26 @@ nav ul li a .special:hover{
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(Images/Group\ 13\ \(1\)\ \(1\).png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    /*height: 600px;*/
+    height: 500px;
 }
 .banner{
     text-align: center;
-    max-width: 700px;
+    /*max-width: 700px;*/
+    max-width: 676px;
     margin: 0 auto;
 }
 .banner-all{
-    padding: 140px 0;
+    /*padding: 140px 0;*/
+    padding: 100px 0;
+
 }
 .banner-content{
     display: flex;
-    padding: 20px;
+    padding: 16px;
     justify-content: space-between;
-    max-width: 820px;
+    /*max-width: 820px;*/
+    max-width: 768px;
     margin: 0 auto;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
@@ -111,9 +117,13 @@ nav ul li a .special:hover{
     color: #FFF;
     font-size: 1rem;
 }
+.hide{
+    display: none;
+}
 /*main styles*/
 main{
-    max-width: 1440px;
+    /*max-width: 1440px;*/
+    max-width: 1170px;
     margin: 0 auto;
 }
 section{
@@ -124,7 +134,8 @@ section{
     justify-content: space-between;
 }
 .tour-about{
-    max-width: 700px;
+    /*max-width: 700px;*/
+    max-width: 550px;
 }
 .tour-img-container img{
     max-width: 550px;
@@ -139,8 +150,70 @@ section{
     color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
+/*destination styles*/
+.destination-content{
+    text-align: center;
+}
+.row-1{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+#different{
+    margin-bottom: 0px;
+}
+/*Why choose us styles*/
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+#card-1{
+    grid-column: 1/span 2;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    width: 510px;
+    padding: 32px;
+}
+#card-2{
+    grid-column: 3/span 4;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    width: 510px;
+    padding: 32px;
+}
+#card-3{
+    grid-column: 2/span 3;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    width: 510px;
+    padding: 32px;
+}
+.card-title{
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 30px;
+}
+.card-description{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width:600px) {
@@ -148,6 +221,9 @@ section{
         gap: 5px;
         display: none;
     }
+    .card-container,
+    .destination-content,
+    .img-container,
     .tour-about,
     .tour-container,
     .banner-all,
@@ -181,9 +257,11 @@ section{
         margin-right: 10px;
         padding: 10px;
         max-width: 410px;
+        max-height: 600px;
         /*width: 95%;
         height: 90%;*/
-        max-height: 550px;
+        /*max-width: 335px;
+        max-height: 483px;*/
         background-position: center;
     }
     .primary-title,
@@ -197,19 +275,41 @@ section{
     .banner-content{
         flex-direction: column;
         gap: 20px;
+        padding-bottom: 10px;
     }
     section{
         margin-top: 10px;
     }
+    .row-1,
     .tour-container{
         flex-direction: column;
     }
     .tour-about{
         max-width: 410px;
     }
+    .row-1 img{
+        max-width: 345px;
+        height: 176px;
+    }
     .tour-img-container img{
         max-width: 345px;
         margin-top: 10px;
         margin-right: 10px;
+    }
+    .destination-content{
+        margin-bottom: 0px;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #card-1{
+        width: 280px;
+    }
+    #card-2{
+        width: 280px;
+    }
+    #card-3{
+        width: 280px;
     }
 }

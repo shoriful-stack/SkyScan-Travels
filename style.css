@@ -163,6 +163,18 @@ section{
 #different{
     margin-bottom: 0px;
 }
+/*test*/
+.test{
+    position: relative;
+}
+.banner-text{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    /*text-align: center;*/
+    color: #FFF;
+    font-size: 1.5rem;
+}
 /*vacation section styles*/
 .cart img{
     width: 250px;
@@ -449,5 +461,8 @@ footer{
         padding: 0 15px 0 15px;
         margin-top: 20px;
         margin-left: 0px;
+    }
+    .same{
+        width: 100%;
     }
 }

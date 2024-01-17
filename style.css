@@ -504,3 +504,27 @@ footer{
         top: 41%;
     }
 }
+
+/*for 992 width*/
+@media screen  and (min-width:600px) and (max-width:992px) {
+    .banner-container{
+        width: 1170px;
+        margin-left: 10px;    
+    }
+    .tour-container{
+        width: 1170px;
+        margin-left: 10px;
+    }
+    .newsletter-container{
+        margin-left: 10px;
+        gap: 20px;
+    }
+    footer{
+        width: 1170px;
+        margin-left: 10px;
+    }
+    .header-container{
+        margin-left: 50px;
+        margin-right: -200px;
+    }
+}

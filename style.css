@@ -163,7 +163,6 @@ section{
 #different{
     margin-bottom: 0px;
 }
-/*test*/
 .test{
     position: relative;
 }
@@ -290,6 +289,9 @@ section{
     font-weight: 800;
     background: #FF5400;
 }
+.test-two{
+    position: relative;
+}
 .discount{
     background: #FF5400;
     padding: 30px 35px;
@@ -297,10 +299,14 @@ section{
     border: none;
     border-radius: 10px;
     text-align: center;
-    position: relative;
+    /*position: relative;
     bottom: 130px;
     margin-left: 280px;
-    transform: scale(.75) rotate(-19deg) translateX(110px);
+    transform: scale(.75) rotate(-19deg) translateX(110px);*/
+    position: absolute;
+    bottom: 6%;
+    left: 53.5%;
+    transform: scale(0.75) rotate(-19deg);
 }
 .newsletter-image{
     height: 400px;
@@ -453,9 +459,10 @@ footer{
         margin-bottom: 0px;
     }
     .discount{
-        margin-left: -5px;
+        left: 19.6%;
+        bottom: 6.95%;
         width: 250px;
-        height: 72px;
+        height: 68px;
         border-radius: 12px;
     }
     footer{
